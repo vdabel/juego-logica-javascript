@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("img/code.png");
+    background-color: #F5F5F5;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    width: 1000px;
+}
+
+#contenedor img {
+    max-width: 500px;
+}
+
+#contenedor-input {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+}
+
+#lblNumero {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+#numeroUsuario {
+    padding: 9px 8px;
+    border-radius: 8px;
+    color: #333;
+    outline: none;
+}
+
+#numeroUsuario:focus {
+    border-color: rgb(93, 158, 255);
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button {
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: #40514E;
+    color: #F5F5F5;
+    font-size: 1.2em;
+}
+
+button:hover {
+    background-color: #43b4c7;
+    cursor: pointer;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
